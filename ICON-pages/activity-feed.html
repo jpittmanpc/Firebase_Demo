@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Verizon Test App</title>
+    <link rel="stylesheet" type="text/css" href="asset://materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="asset://icon.css">
+  </head>
+  <body class="grey-bg">
+    <div class="page-card">
+      <div class="feed-post-main-wrap">
+        <div class="row">
+          <div class="col s2 feed-post-avatar"><img src="asset://profile-photo.png" class="circle"></div>
+          <div class="col s10 feed-post-author">
+            <p class="author-name">Darth Vader</p>
+            <p class="author-role">Sith</p>
+          </div>
+        </div>
+        <div class="row feed-post-image"><img src="asset://feed-post-img.png"></div>
+        <div class="row">
+          <div class="col s12">
+            <p class="feed-post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quaerat corporis quasi, nulla facilis, consequuntur sunt nesciunt aspernatur quos reprehenderit earum vero nisi sint alias, perspiciatis repudiandae aperiam voluptate rerum!</p>
+          </div>
+        </div>
+      </div>
+      <div class="feed-post-meta-wrap">
+        <div class="row">
+          <div class="col s5">
+            <div class="feed-post-comments"><i class="mdi-communication-messenger grey-text text-darken-2"></i>
+              <p class="feed-post-meta-text"><a href="#">10</a></p>
+            </div>
+            <div class="feed-post-likes"><i class="mdi-action-favorite grey-text text-darken-2"></i>
+              <p class="feed-post-meta-text"><a href="#">15</a></p>
+            </div>
+          </div>
+          <div class="col s7">
+            <p class="feed-post-comment-action"><a href="#">Comment</a></p>
+            <p class="feed-post-like-action"><a href="#">Like</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-card">
+      <div class="feed-post-main-wrap">
+        <div class="row">
+          <div class="col s2 feed-post-avatar"><img src="asset://profile-photo.png" class="circle"></div>
+          <div class="col s10 feed-post-author">
+            <p class="author-name">Darth Vader</p>
+            <p class="author-role">Sith</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <p class="feed-post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quaerat corporis quasi, nulla facilis, consequuntur sunt nesciunt aspernatur quos reprehenderit earum vero nisi sint alias, perspiciatis repudiandae aperiam voluptate rerum!</p>
+          </div>
+        </div>
+      </div>
+      <div class="feed-post-meta-wrap">
+        <div class="row">
+          <div class="col s5">
+            <div class="feed-post-comments"><i class="mdi-communication-messenger grey-text text-darken-2"></i>
+              <p class="feed-post-meta-text"><a href="#">10</a></p>
+            </div>
+            <div class="feed-post-likes"><i class="mdi-action-favorite grey-text text-darken-2"></i>
+              <p class="feed-post-meta-text"><a href="#">15</a></p>
+            </div>
+          </div>
+          <div class="col s7">
+            <p class="feed-post-comment-action"><a href="#">Comment</a></p>
+            <p class="feed-post-like-action"><a href="#">Like</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="asset://jquery.min.js"></script>
+    <script src="asset://materialize.min.js"></script>
+    <script src="https://d3f5pyioow99x0.cloudfront.net/0.8.43/hull.js"></script>
+    <script src="asset://fastclick.js"></script>
+    <script>
+      Hull.init({
+        "appId": "54f76c3db4e90fec730014da",
+        "orgUrl": "https://236ceb87.hullapp.io"
+      }, function (cb) {
+      	console.log(cb);
+      }, function (errback){
+      	console.log(errback);
+      });
+    </script>
+  </body>
+</html>

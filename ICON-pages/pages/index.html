@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Verizon Test App</title>
+    <link rel="stylesheet" type="text/css" href="asset://materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="asset://icon.css">
+  </head>
+  <body>
+    <div ng-controller="TestController as test" class="content"></div>
+    <script src="asset://jquery.min.js"></script>
+    <script src="asset://materialize.min.js"></script>
+    <script src="https://d3f5pyioow99x0.cloudfront.net/0.8.43/hull.js"></script>
+    <script src="asset://fastclick.js"></script>
+    <script>
+      Hull.init({
+        "appId": "54f76c3db4e90fec730014da",
+        "orgUrl": "https://236ceb87.hullapp.io"
+      }, function (cb) {
+      	console.log(cb);
+      }, function (errback){
+      	console.log(errback);
+      });
+    </script>
+    <script src="asset://index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Verizon Test App</title>
+        <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/icon.css">
+    </head>
+    <body class="grey-bg">
+        <div class="profile-header">
+          <div class="profile-avatar"><img src="imgs/profile-photo.png" class="circle"></div>
+          <div class="profile-info">
+            <p class="profile-name">{{fullName}}</p>
+            <p class="profile-role">{{role}}</p>
+          </div>
+<!--  Not sure if this feature will be added or not!  <div class="profile-add-button"><a class="btn-floating btn-large waves-effect waves-light light-green"><i class="mdi-social-person-add"></i></a></div>-->
+        </div>
+        <div class="profile-info-bar">
+          <div class="profile-points">
+            <p>{[points}}</p>
+          </div>
+          <div class="profile-following"> 
+            <p>{{following}}</p>
+          </div>
+          <div class="profile-followers"> 
+            <p>{{followers}}</p>
+          </div>
+        </div>
+        <div class="page-card">
+          <h2 class="profile-section-header">Current Rank</h2>
+          <div class="row rank-icons-wrap">
+            <div class="col s3 rank-icon"><img src="imgs/post-image.png"></div>
+            <div class="col s3 rank-icon"><img src="imgs/post-image.png"></div>
+            <div class="col s3 rank-icon"><img src="imgs/post-image.png"></div>
+            <div class="col s3 rank-icon"><img src="imgs/post-image.png"></div>
+          </div>
+        </div>
+        <div class="page-card">
+          <h2 class="profile-section-header">Biography</h2>
+          <div class="row">
+            <div class="col s12">
+              <p class="biography-text">{{bio}}</p>
+            </div>
+          </div>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="../assets/materialize.min.js"></script>
+        <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+        <script src="../assets/app.js"></script>
+        <script src="js/handlebars-v3.0.3.js"></script>
+      </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Verizon Test App</title>
+    <link rel="stylesheet" type="text/css" href="asset://materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="asset://icon.css">
+  </head>
+  <body class="grey-bg">
+    <div class="page-card">
+      <div class="row one-post-header">
+        <div class="col s12"><img src="asset://post-header.png">
+          <div class="one-post-header-inner-wrap">
+            <div class="one-post-title-wrap">
+              <h4 class="one-post-title">Think Tank Winners Announced at ICON</h4>
+            </div>
+            <p class="one-post-meta">Posted on October 4, 2013 by Dudley Marion</p>
+          </div>
+        </div>
+      </div>
+      <div class="row one-post-content">
+        <div class="col s12">
+          <p class="lead">
+            Croissant ice cream macaroon cake. Dessert jelly beans candy
+            cookies. Bear claw candy canes gingerbread caramels cake.
+          </p>
+          <p class="subtitle">Subtitle can go here if it makes things easier.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ex porro esse a obcaecati impedit quod vel aperiam, quibusdam temporibus, voluptatum fuga recusandae molestiae repellendus earum, optio tempora tempore et.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi vitae quisquam exercitationem tempore dignissimos voluptatum delectus beatae, neque culpa autem? Architecto est accusamus nulla cum possimus laboriosam ipsum in optio.</p>
+        </div>
+      </div>
+      <div class="row one-post-author">
+        <div class="col s12">
+          <p>Written by</p>
+          <p class="author">Dudley Marion</p>
+        </div>
+      </div>
+    </div>
+    <div class="one-post-composer">
+      <div class="row one-post-composer-block">
+        <div class="col s12">
+          <p class="one-post-composer-header">Write your comment</p>
+          <form id="post-comments">
+            <div class="input-field">
+              <textarea class="materialize-textarea textarea-condense"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="col s12">
+          <button type="submit" form="post-comments" class="right submit-comments btn-flat waves-effect waves-light waves-orange blue-text text-lighten-3">Send</button>
+        </div>
+      </div>
+    </div>
+    <div class="page-card">
+      <div class="row one-post-comments">
+        <div class="col s12">
+          <p class="one-post-comments-header">3 Comments</p>
+          <div id="comment-template" class="row one-post-comments-content">
+            <div class="col s2 comment-user-picture"><img src="asset://post-image.png" class="circle"></div>
+            <div class="col s10 comments-content">
+              <h5 class="comment-author">Dennis Benny</h5><i class="small mdi-action-favorite"></i>
+              <p class="comment-time"> 3 hours ago</p>
+              <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos consequuntur hic cumque quaerat natus a accusantium non quas nam, voluptatem pariatur ullam qui enim nemo. Ad, reiciendis quis sequi consectetur!</p>
+            </div>
+          </div>
+          <div class="row one-post-comments-content">
+            <div class="col s2 comment-user-picture"><img src="asset://post-image.png" class="circle"></div>
+            <div class="col s10 comments-content">
+              <h5 class="comment-author">Dennis Benny</h5><i class="small mdi-action-favorite"></i>
+              <p class="comment-time"> 4 hours ago</p>
+              <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nostrum ipsa aspernatur aliquid, ex. Laboriosam incidunt cum illo eius consequatur molestiae, sint consequuntur illum voluptates repellendus nulla reprehenderit nisi, quisquam!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-card">
+      <div class="row related-header">
+        <div class="col s12">
+          <p class="related">Related</p>
+        </div>
+      </div>
+      <div id="post-template" class="row post">
+        <div class="col s4 post-image"><img src="asset://post-image.png"></div>
+        <div class="col s8 post-content">
+          <h5 class="post-title">Pudding Dessert Jelly Fruitcake Tart Wafer Candy Chocolate</h5>
+          <p class="post-author">by Dudley Marion</p>
+          <div class="row post-info">
+            <div class="col s4">
+              <p class="post-views">15 Views</p>
+            </div>
+            <div class="col s8">
+              <p class="post-comments">12 Comments</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row post">
+        <div class="col s4 post-image"><img src="asset://post-image.png"></div>
+        <div class="col s8 post-content">
+          <h5 class="post-title">Pudding Dessert Jelly Fruitcake Tart Wafer Candy Chocolate</h5>
+          <p class="post-author">by Dudley Marion</p>
+          <div class="row post-info">
+            <div class="col s4">
+              <p class="post-views">15 Views</p>
+            </div>
+            <div class="col s8">
+              <p class="post-comments">12 Comments</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="asset://jquery.min.js"></script>
+    <script src="asset://materialize.min.js"></script>
+    <script src="https://d3f5pyioow99x0.cloudfront.net/0.8.43/hull.js"></script>
+    <script src="asset://fastclick.js"></script>
+    <script>
+      Hull.init({
+        "appId": "54f76c3db4e90fec730014da",
+        "orgUrl": "https://236ceb87.hullapp.io"
+      }, function (cb) {
+      	console.log(cb);
+      }, function (errback){
+      	console.log(errback);
+      });
+    </script>
+    <script src="asset://one-post.js"></script>
+  </body>
+</html>

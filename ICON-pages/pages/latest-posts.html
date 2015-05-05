@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Verizon Test App</title>
+    <link rel="stylesheet" type="text/css" href="asset://materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="asset://icon.css">
+  </head>
+  <body>
+    <div class="row sort-content">
+      <div class="col s6">
+        <p class="sort-label sort-label-active"><a href="#">Latest</a></p>
+      </div>
+      <div class="col s6">
+        <p class="sort-label right"><a href="#">Popular</a></p>
+      </div>
+    </div>
+    <div id="post-template" class="row post">
+      <div class="col s4 post-image"><img src="asset://post-image.png"></div>
+      <div class="col s8 post-content">
+        <h5 class="post-title">Pudding Dessert Jelly Fruitcake Tart Wafer Candy Chocolate</h5>
+        <p class="post-author">by Dudley Marion</p>
+        <div class="row post-info">
+          <div class="col s4">
+            <p class="post-views">15 Views</p>
+          </div>
+          <div class="col s8">
+            <p class="post-comments">12 Comments</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row post">
+      <div class="col s4 post-image"><img src="asset://post-image.png"></div>
+      <div class="col s8 post-content">
+        <h5 class="post-title">Sugar Plum Jelly Gummi Bears Brownie Dessert Jelly Beans</h5>
+        <p class="post-author">by Ethan Aylmyer</p>
+        <div class="row post-info">
+          <div class="col s4">
+            <p class="post-views">365 Views</p>
+          </div>
+          <div class="col s8">
+            <p class="post-comments">15 Comments</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="asset://jquery.min.js"></script>
+    <script src="asset://materialize.min.js"></script>
+    <script src="https://d3f5pyioow99x0.cloudfront.net/0.8.43/hull.js"></script>
+    <script src="asset://fastclick.js"></script>
+    <script>
+      Hull.init({
+        "appId": "54f76c3db4e90fec730014da",
+        "orgUrl": "https://236ceb87.hullapp.io"
+      }, function (cb) {
+      	console.log(cb);
+      }, function (errback){
+      	console.log(errback);
+      });
+    </script>
+  </body>
+</html>
