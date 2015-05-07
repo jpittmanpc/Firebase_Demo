@@ -1,0 +1,65 @@
+{
+  "users" : {
+    "simplelogin:1" : {
+      "email" : "john.walker2@verizonwireless.com",
+      "first_name" : "John",
+      "last_name" : "Walker",
+      "photo" : "url.to.pic",
+      "bio" : "users bio info will go here, this should be writable by the user",
+      "location" : "Alpharetta, Ga",
+      "department" : "South Area Marketing",
+      "groups" : {
+      	"staff" : true
+      	}
+      },
+    
+    "simplelogin:2" : {
+      "email" : "Justin.Pittman@verizonwireless.com",
+      "first_name" : "Justin",
+      "last_name" : "Pittman",
+      "photo" : "url.to.pic",
+      "bio" : "users bio info will go here, this should be writable by the user",
+      "location" : "Greenville, Sc",
+      "department" : "South Area Marketing",
+      "groups" : {
+      	"techSupport" : true
+      	}
+    }
+  },
+  "groups" : {
+  	"b2b" : {
+  		"name" : "B2B"
+  	},
+  	"b2bLeadership" : {
+  		"name" : "B2B Leadership"
+  	},
+  	"customerService" : {
+  		"name" : "Customer Service"
+  	},
+  	"indirect" : {
+  		"name" : "Indirect"
+  	},
+  	"leadership" : {
+  		"name" : "Leadership"
+  	},
+  	"retail" : {
+  		"name" : "Retail"
+  	},	
+  	"retailLeadership" : {
+  		"name" : "Retail Leadership"
+  	},
+  	  	"raSupport" : {
+  		"name" : "Region/Area Support"
+  	},
+  	"staff" : {
+  		"name" : "Staff"
+  	},	
+  	"techSupport" : {
+  		"name" : "Tech Support"
+  	},
+  	"telesales" : {
+  		"name" : "Telesales"
+  	}	
+  
+  }
+}

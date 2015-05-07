@@ -8,31 +8,29 @@
     <link rel="stylesheet" type="text/css" href="css/icon.css">
   </head>
   <body class="grey-bg">
-    <div class="page-card">
-      <div class="member-list-wrap" id="start"">
-        <script>
-            var ref = new Firebase("https://icon-demo.firebaseio.com/users/");
-            var count;
-            contentref = document.getElementById("start");
+        <div class="cotainer">
+        <ul class="collection with-header" id="start">
+            <li class="collection-header"><span class="input-field"><i class=
+            "mdi-action-search prefix"></i> <input class="validate" id=
+            "icon_prefix" type="text"> <label for=
+            "icon_prefix">Search</label></span>
+            </li>
+
+
+            
+                <script>
+var ref = new Firebase("https://icon-demo.firebaseio.com/users/");
+                var count;
+                contentref = document.getElementById("start");
                 ref.on("child_added", function(snapshot) {
- var user = snapshot.val();
- var image = user.photo
- /* Photo will just be '+ image +' as in JSON it's pointed at whatever url.    This can be customized.
- I tried to clean up as much of the code as I could but I left a lot of the stuff at the bottom for formatting errors because I didn't do a lot of research on this css.
- */ Profile link will go to the key .html.. Can be changed also
-                    contentref.innerHTML += '<a href="/profile/'+ snapshot.key() +'.html" class="div-link"><div class="row member-record"> <div class="col s2 member-img"> <img src="imgs/post-image.png" class="circle"></div><div class="col s9 member-info"><p class="member-title">' + user.first_name + ' ' + user.last_name + '</p> <p class="member-subtitle">' + user.department + '<br><b> Location:</b> ' + user.location +' </p><div class="col s1 more-info"><i class="mdi-navigation-chevron-right"></i></div></a> ';
+                  var user = snapshot.val();
+                  var image = user.photo
+
+                  contentref.innerHTML += '<li class="collection-item avatar"><img src="imgs/post-image.png" alt="user image" class="circle"><span class="title">' + user.first_name + ' ' + user.last_name + '</span><p>' + user.department + '<br>' + user.location +' </p><a href="/profile/'+ snapshot.key() +'" class="secondary-content"><i class="mdi-navigation-chevron-right small"></i></a></li>';
                 });
-        </script>
-                              </div>
-            <a href="/one-post" class="div-link">
-          <div class="row member-record">
-            <div class="col s2 member-img"><img src="imgs/post-image.png" class="circle"></div>
-            <div class="col s9 member-info">
-              <p class="member-title">Two-line item</p>
-              <p class="member-subtitle">Secondary text</p>
-            </div>
-            <div class="col s1 more-info"><i class="mdi-navigation-chevron-right"></i></div>
-          </div></a></div>
+                </script>
+            
+        </ul>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
