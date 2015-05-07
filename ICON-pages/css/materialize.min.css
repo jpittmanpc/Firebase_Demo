@@ -2774,7 +2774,7 @@ table.responsive-table.bordered tbody tr {
 
 .collection .collection-item.avatar {
     height:84px;
-    padding-left:72px;
+    padding-left:25%;
     position:relative
 }
 
