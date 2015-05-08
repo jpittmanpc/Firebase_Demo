@@ -425,7 +425,8 @@ textarea.textarea-condense:focus {
 
 .member-title {
     margin-top:0;
-    margin-bottom:0
+    margin-bottom:0;
+    font-size:1.6rem;
 }
 
 .member-subtitle {
@@ -719,3 +720,4 @@ textarea.textarea-condense:focus {
     font-size:1.1rem;
     margin:0
 }
+

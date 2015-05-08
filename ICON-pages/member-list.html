@@ -1,52 +1,73 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="app">
   <head>
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Verizon Test App</title>
-    <link rel="stylesheet" type="text/css" href="asset://materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="asset://icon.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
   </head>
   <body class="grey-bg">
-    <div class="page-card">
-      <div class="member-list-wrap"><a href="/one-post" class="div-link">
-          <div class="row member-record">
-            <div class="col s2 member-img"><img src="asset://post-image.png" class="circle"></div>
-            <div class="col s9 member-info">
-              <p class="member-title">Two-line item</p>
-              <p class="member-subtitle">Secondary text</p>
+<div class="cotainer">
+    
+        <div class="row" style="background-color:white; padding-top:10pt">
+            <div class="col s12"><span class="input-field"><i class=
+            "mdi-action-search prefix"></i> <input class="validate" id=
+            "icon_prefix" type="text"> <label for=
+            "icon_prefix">Search</label></span>
             </div>
-            <div class="col s1 more-info"><i class="mdi-navigation-chevron-right"></i></div>
-          </div></a><a href="/one-post" class="div-link">
-          <div class="row member-record">
-            <div class="col s2 member-img"><img src="asset://post-image.png" class="circle"></div>
-            <div class="col s9 member-info">
-              <p class="member-title">Two-line item</p>
-              <p class="member-subtitle">Secondary text</p>
-            </div>
-            <div class="col s1 more-info"><i class="mdi-navigation-chevron-right"></i></div>
-          </div></a><a href="/one-post" class="div-link">
-          <div class="row member-record">
-            <div class="col s2 member-img"><img src="asset://post-image.png" class="circle"></div>
-            <div class="col s9 member-info">
-              <p class="member-title">Two-line item</p>
-              <p class="member-subtitle">Secondary text</p>
-            </div>
-            <div class="col s1 more-info"><i class="mdi-navigation-chevron-right"></i></div>
-          </div></a></div>
+        </div>
+        
+        <ul class="collection" style="margin-top:-15pt" id="start">
+                <script>
+var ref = new Firebase("https://icon-demo.firebaseio.com/users/");
+                var count;
+                contentref = document.getElementById("start");
+                ref.on("child_added", function(snapshot) {
+                  var user = snapshot.val();
+                  var image = user.photo
+
+                  contentref.innerHTML += '<li class="collection-item avatar"><img src="imgs/user-profile-list.png" alt="user image" class="circle"><span class="title">' + user.first_name + ' ' + user.last_name + '</span><p>' + user.department + '<br>' + user.location +' </p><a href="/profile/'+ snapshot.key() +'.html" class="secondary-content"><i class="mdi-navigation-chevron-right small" id="profileclick"></i></a></li>';
+                });
+                </script>
+                <script>
+(function(getProfile){
+ function init(){
+  getProfile.document.getElementById('profileclick').addEventListener('click',loadProfile,false);
+ }
+ function loadProfile(lp){
+  var assign=lp.target;
+  if(assign.parentNode.id=='loadProfile'){
+   getProfile.localStorage['xfer']=JSON.stringify({src:assign.src,id:assign.id});
+   getProfile.location.href="profile.html";
+  }
+ }
+ getProfile.addEventListener('load',init,false)
+})(window)
+</script>
+            
+        </ul>
     </div>
-    <script src="asset://jquery.min.js"></script>
-    <script src="asset://materialize.min.js"></script>
-    <script src="https://d3f5pyioow99x0.cloudfront.net/0.8.43/hull.js"></script>
-    <script src="asset://fastclick.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/fastclick.js"></script>
+    
     <script>
-      Hull.init({
-        "appId": "54f76c3db4e90fec730014da",
-        "orgUrl": "https://236ceb87.hullapp.io"
-      }, function (cb) {
-      	console.log(cb);
-      }, function (errback){
-      	console.log(errback);
-      });
+        
+		var input = document.getElementById('icon_prefix');
+        input.onkeyup = function () {
+        var filter = input.value.toUpperCase();
+        var lis = document.getElementsByTagName('li');
+        for (var i = 0; i < lis.length; i++) {
+        var name = lis[i].getElementsByClassName('title')[0].innerHTML;
+        if (name.toUpperCase().indexOf(filter) == 0) 
+            lis[i].style.display = 'list-item';
+        else
+            lis[i].style.display = 'none';
+    }
+}
+		
     </script>
+	
   </body>
 </html>

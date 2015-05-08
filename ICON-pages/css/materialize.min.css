@@ -2774,14 +2774,14 @@ table.responsive-table.bordered tbody tr {
 
 .collection .collection-item.avatar {
     height:84px;
-    padding-left:72px;
+    padding-left:25%;
     position:relative
 }
 
 .collection .collection-item.avatar .circle {
     position:absolute;
-    width:42px;
-    height:42px;
+    width:60px;
+    height:60px;
     overflow:hidden;
     left:15px;
     display:inline-block;
@@ -2836,11 +2836,11 @@ table.responsive-table.bordered tbody tr {
 .collection.with-header .collection-header {
     background-color:#fff;
     border-bottom:1px solid #e0e0e0;
-    padding:10px 20px
+    padding:1pt 15pt
 }
 
 .collection.with-header .collection-item {
-    padding-left:30px
+    padding-left:25%
 }
 
 .secondary-content {
@@ -3110,8 +3110,8 @@ span.badge.new:after {
 
 @font-face {
     font-family:"Material-Design-Icons";
-    src:url(Material-Design-Icons.eot);
-    src:url(Material-Design-Icons.eot?#iefix) format("embedded-opentype"),url(Material-Design-Icons.woff) format("woff"),url(Material-Design-Icons.ttf) format("truetype"),url(Material-Design-Icons.svg#Material-Design-Icons) format("svg");
+    src:url(../fonts/Material-Design-Icons.eot);
+    src:url(../fonts/Material-Design-Icons.eot?#iefix) format("embedded-opentype"),url(../fonts/Material-Design-Icons.woff) format("woff"),url(../fonts/Material-Design-Icons.ttf) format("truetype"),url(../fonts/Material-Design-Icons.svg#Material-Design-Icons) format("svg");
     font-weight:400;
     font-style:normal
 }
@@ -6656,31 +6656,31 @@ nav,nav .nav-wrapper i,nav a.button-collapse,nav a.button-collapse i {
 
 @font-face {
     font-family:"Roboto";
-    src:url(Roboto-Thin.ttf);
+    src:url(../fonts/Roboto-Thin.ttf);
     font-weight:200
 }
 
 @font-face {
     font-family:"Roboto";
-    src:url(Roboto-Light.ttf);
+    src:url(../fonts/Roboto-Light.ttf);
     font-weight:300
 }
 
 @font-face {
     font-family:"Roboto";
-    src:url(Roboto-Regular.ttf);
+    src:url(../fonts/Roboto-Regular.ttf);
     font-weight:400
 }
 
 @font-face {
     font-family:"Roboto";
-    src:url(Roboto-Medium.ttf);
+    src:url(../fonts/Roboto-Medium.ttf);
     font-weight:500
 }
 
 @font-face {
     font-family:"Roboto";
-    src:url(Roboto-Bold.ttf);
+    src:url(../fonts/Roboto-Bold.ttf);
     font-weight:700
 }
 
